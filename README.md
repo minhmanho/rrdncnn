@@ -120,18 +120,18 @@ Finally, we calculate the BD-rates based on the results of HEVC (attached in the
 <thead>
   <tr>
     <th class="tg-nrix" rowspan="2">Sequence_QP</th>
-    <th class="tg-nrix" colspan="2">HEVC&nbsp;&nbsp;&nbsp;16.20</th>
-    <th class="tg-nrix" rowspan="2">Low bit-rate</th>
+    <th class="tg-nrix" colspan="2">HEVC&nbsp;16.20</th>
+    <th class="tg-nrix" rowspan="2">Low Bit-rate (kbps)</th>
     <th class="tg-nrix" colspan="2">RR-DnCNN</th>
-    <th class="tg-nrix" colspan="2">RR-DnCNN&nbsp;&nbsp;&nbsp;v2.0</th>
+    <th class="tg-nrix" colspan="2">RR-DnCNN&nbsp;v2.0</th>
   </tr>
   <tr>
-    <td class="tg-nrix">Bit-rate</td>
+    <td class="tg-nrix">Bit-rate (kbps)</td>
+    <td class="tg-nrix">PSNR (dB)</td>
     <td class="tg-nrix">PSNR</td>
-    <td class="tg-nrix">PSNR</td>
-    <td class="tg-nrix">BD-BR</td>
-    <td class="tg-nrix">PSNR</td>
-    <td class="tg-nrix">BD-BR</td>
+    <td class="tg-nrix">BD-BR (%)</td>
+    <td class="tg-nrix">PSNR (dB)</td>
+    <td class="tg-nrix">BD-BR (%)</td>
   </tr>
 </thead>
 <tbody>
@@ -159,7 +159,7 @@ Finally, we calculate the BD-rates based on the results of HEVC (attached in the
     <td class="tg-7zrl">34.1018</td>
     <td class="tg-7zrl">11.4706</td>
     <td class="tg-7zrl">31.2232</td>
-    <td class="tg-7zrl">31.309</td>
+    <td class="tg-7zrl">31.3090</td>
   </tr>
   <tr>
     <td class="tg-7zrl">Johnny_1280x720_50.yuv_47</td>
@@ -218,7 +218,7 @@ unzip -o ./logs/result_sample.zip -d ./logs/
 ```
 
 ## Citations
-Please cite this work if you find it helpful.
+Please cite our works if you find them helpful.
 ```
 @inproceedings{ho2020down,
   title={Down-Sampling Based Video Coding with Degradation-Aware Restoration-Reconstruction Deep Neural Network},
@@ -247,10 +247,10 @@ This repository (as well as its materials) is for non-commercial uses and resear
 
 Thank G. Bjontegaard and S. Pateux for [ETRO's Bjontegaard Metric Implementation](https://github.com/tbr/bjontegaard_etro).
 ```
-[1] G. Bjontegaard, Calculation of average PSNR differences between RD-curves (VCEG-M33)
-[2] S. Pateux, J. Jung, An excel add-in for computing Bjontegaard metric and its evolution
+G. Bjontegaard, Calculation of average PSNR differences between RD-curves (VCEG-M33)
+S. Pateux, J. Jung, An excel add-in for computing Bjontegaard metric and its evolution
 ```
 This work is supported by JST, PRESTO Grant Number JPMJPR1757 Japan.
 
 ## Contact
-If you have any suggestions, questions, or the use of materials infringe your copyrights/license, please contact me <man.hominh.6m@stu.hosei.ac.jp>.
+If you have any suggestions, questions, or the use of materials infringes your copyright/license, please contact me <man.hominh.6m@stu.hosei.ac.jp>.
