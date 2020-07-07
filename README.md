@@ -37,7 +37,7 @@ cd rrdncnn
 
 ### 2. Prepare data:
 
-Since the files are large, URLs here needs your confirmation; otherwise, just run the command lines with recursion '-r'.
+Since the files are large, URLs here need your confirmation; otherwise, just run the command lines with recursion '-r'.
 
 \+ Johnny 1280x720 in Class E (65 MB) (_recommended_).
 ```
@@ -102,9 +102,10 @@ CUDA_VISIBLE_DEVICES=0 python eval.py --vin ./data/class_e/ --ckpt ./models/rrdn
 ## Results
 
 After running, you will get the results as follows:
-+ \<path/to/class/folder\> or <args.out> /\<model\>\_SDLR\_\<configuration\>\_\<QP\> (Folder contains reconstructed videos)
-+ \<args.log_dir\>/\<configuration\>\_\<model\>.csv (CSV file contains quantitative results)
-
+```
++ <path/to/class/folder> or <args.out>/<model>_SDLR_<configuration>_<QP> (Folder contains reconstructed videos)
++ <args.log_dir>/<configuration>_<model>.csv (CSV file contains quantitative results)
+```
 Beside printing, we also export the results in CSV to *log_dir* for copying/pasting, where the columns (*left-to-right*) in the CSV file represent:
 ```
 video_name_QP, HR-Y-PSNR, HR-Y-SSIM, LR-Y-PSNR, LR-Y-SSIM
