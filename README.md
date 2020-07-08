@@ -39,7 +39,7 @@ cd rrdncnn
 
 Since the files are large, URLs here need your confirmation; otherwise, just run the command lines with recursion '-r'.
 
-\+ Johnny 1280x720 in Class E (65 MB) (_recommended_).
+\+ Johnny 1280x720 in Class E (65 MB) compressed using Low Delay P (_recommended_).
 ```
 wget --no-check-certificate -r 'https://docs.google.com/uc?export=download&id=1PZWTdTkMxLpaSTJ4A7Xxw2QK6tmYy-d9' -O ./data/class_e.zip
 unzip -o ./data/class_e.zip -d ./data/
@@ -49,7 +49,7 @@ unzip -o ./data/class_e.zip -d ./data/
 ./data/download_class_e.sh
 ```
 
-\+ BasketballDrill 832x480 in Class C (384 MB) (_optional_).
+\+ BasketballDrill 832x480 in Class C (384 MB) compressed using All Intra (_optional_).
 ```
 wget --no-check-certificate -r 'https://docs.google.com/uc?export=download&id=1GsnzTPGEVS8v-aMfQyrKExqKx-jZP7uP' -O ./data/class_c.zip
 unzip -o ./data/class_c.zip -d ./data/
@@ -115,7 +115,7 @@ E.g.,
 rrdncnn_Johnny_1280x720_50_DLR_LDP_QP32,35.0897,0.9118,38.2423,0.9594
 ```
 
-Finally, we calculate the BD-rates based on the results of HEVC (attached in the class package) and our methods. The expected output should be:
+Finally, we calculate the BD-rates based on the results of HEVC (attached in the class package) and our methods. The expected output on Johnny (LDP) and BasketballDrill (AI) should be:
 
 <table class="tg">
 <thead>
