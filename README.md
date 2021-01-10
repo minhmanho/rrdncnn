@@ -1,4 +1,4 @@
-# Down-Sampling Based Video Coding with Degradation-aware Restoration-Reconstruction Deep Neural Network (MMM'2020 - TIP'2021)
+# Down-Sampling Based Video Coding with Degradation-aware Restoration-Reconstruction Deep Neural Network (TIP'2021 - MMM'2020)
 [Man M. Ho](https://minhmanho.github.io/), Gang He, Zheng Wang, and [Jinjia Zhou](https://www.zhou-lab.info/jinjia-zhou).
 
 ## News
@@ -17,13 +17,13 @@
 - [x] Publish evaluation code.
 
 ## Papers:
-[Down-Sampling Based Video Coding with Degradation-aware Restoration-Reconstruction Deep Neural Network](https://link.springer.com/chapter/10.1007/978-3-030-37731-1_9)
-[Minh-Man Ho](https://minhmanho.github.io/), Gang He, Zheng Wang, and [Jinjia Zhou](https://www.zhou-lab.info/jinjia-zhou)
+[Down-Sampling Based Video Coding with Degradation-aware Restoration-Reconstruction Deep Neural Network](https://link.springer.com/chapter/10.1007/978-3-030-37731-1_9) <br>
+[Minh-Man Ho](https://minhmanho.github.io/), Gang He, Zheng Wang, and [Jinjia Zhou](https://www.zhou-lab.info/jinjia-zhou) <br>
 In International Conference on Multimedia Modeling (MMM), 2020.
 
-[RR-DnCNN v2.0: Enhanced Restoration-Reconstruction Deep Neural Network for Down-Sampling Based Video Coding](https://ieeexplore.ieee.org/document/9318509)
-(**Open Access**)
-[Man M. Ho](https://minhmanho.github.io/), [Jinjia Zhou](https://www.zhou-lab.info/jinjia-zhou), and Gang He
+[RR-DnCNN v2.0: Enhanced Restoration-Reconstruction Deep Neural Network for Down-Sampling Based Video Coding](https://ieeexplore.ieee.org/document/9318509) <br>
+(**Open Access**) <br>
+[Man M. Ho](https://minhmanho.github.io/), [Jinjia Zhou](https://www.zhou-lab.info/jinjia-zhou), and Gang He <br>
 In IEEE Transactions on Image Processing (TIP), 2021.
 
 [![](http://img.youtube.com/vi/-oNjWXAM5Hc/0.jpg)](http://www.youtube.com/watch?v=-oNjWXAM5Hc "Click for watching demonstration")
