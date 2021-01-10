@@ -47,9 +47,9 @@ cd rrdncnn
 
 ### 2. Prepare data:
 
-Since the files are large, URLs here needs your confirmation; otherwise, just run the command lines with recursion '-r'.
+Since the files are large, URLs here need your confirmation; otherwise, just run the command lines with recursion '-r'.
 
-\+ Johnny 1280x720 in Class E (65 MB) (_recommended_).
+\+ Johnny 1280x720 in Class E (65 MB) compressed using Low Delay P (_recommended_).
 ```
 wget --no-check-certificate -r 'https://docs.google.com/uc?export=download&id=1PZWTdTkMxLpaSTJ4A7Xxw2QK6tmYy-d9' -O ./data/class_e.zip
 unzip -o ./data/class_e.zip -d ./data/
@@ -59,7 +59,7 @@ unzip -o ./data/class_e.zip -d ./data/
 ./data/download_class_e.sh
 ```
 
-\+ BasketballDrill 832x480 in Class C (384 MB) (_optional_).
+\+ BasketballDrill 832x480 in Class C (384 MB) compressed using All Intra (_optional_).
 ```
 wget --no-check-certificate -r 'https://docs.google.com/uc?export=download&id=1GsnzTPGEVS8v-aMfQyrKExqKx-jZP7uP' -O ./data/class_c.zip
 unzip -o ./data/class_c.zip -d ./data/
@@ -112,9 +112,10 @@ CUDA_VISIBLE_DEVICES=0 python eval.py --vin ./data/class_e/ --ckpt ./models/rrdn
 ## Results
 
 After running, you will get the results as follows:
-+ \<path/to/class/folder\> or <args.out> /\<model\>\_SDLR\_\<configuration\>\_\<QP\> (Folder contains reconstructed videos)
-+ \<args.log_dir\>/\<configuration\>\_\<model\>.csv (CSV file contains quantitative results)
-
+```
++ <path/to/class/folder> or <args.out>/<model>_SDLR_<configuration>_<QP> (Folder contains reconstructed videos)
++ <args.log_dir>/<configuration>_<model>.csv (CSV file contains quantitative results)
+```
 Beside printing, we also export the results in CSV to *log_dir* for copying/pasting, where the columns (*left-to-right*) in the CSV file represent:
 ```
 video_name_QP, HR-Y-PSNR, HR-Y-SSIM, LR-Y-PSNR, LR-Y-SSIM
@@ -124,33 +125,24 @@ E.g.,
 rrdncnn_Johnny_1280x720_50_DLR_LDP_QP32,35.0897,0.9118,38.2423,0.9594
 ```
 
-Finally, we calculate the BD-rates based on the results of HEVC (attached in the class package) and our methods. The expected output should be:
+Finally, we calculate the BD-rates based on the results of HEVC (attached in the class package) and our methods. The expected output on Johnny (LDP) and BasketballDrill (AI) should be:
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-nrix{text-align:center;vertical-align:middle}
-.tg .tg-7zrl{text-align:left;vertical-align:bottom}
-</style>
 <table class="tg">
 <thead>
   <tr>
     <th class="tg-nrix" rowspan="2">Sequence_QP</th>
-    <th class="tg-nrix" colspan="2">HEVC&nbsp;&nbsp;&nbsp;16.20</th>
-    <th class="tg-nrix" rowspan="2">Low bit-rate</th>
+    <th class="tg-nrix" colspan="2">HEVC&nbsp;16.20</th>
+    <th class="tg-nrix" rowspan="2">Low Bit-rate (kbps)</th>
     <th class="tg-nrix" colspan="2">RR-DnCNN</th>
-    <th class="tg-nrix" colspan="2">RR-DnCNN&nbsp;&nbsp;&nbsp;v2.0</th>
+    <th class="tg-nrix" colspan="2">RR-DnCNN&nbsp;v2.0</th>
   </tr>
   <tr>
-    <td class="tg-nrix">Bit-rate</td>
+    <td class="tg-nrix">Bit-rate (kbps)</td>
+    <td class="tg-nrix">PSNR (dB)</td>
     <td class="tg-nrix">PSNR</td>
-    <td class="tg-nrix">PSNR</td>
-    <td class="tg-nrix">BD-BR</td>
-    <td class="tg-nrix">PSNR</td>
-    <td class="tg-nrix">BD-BR</td>
+    <td class="tg-nrix">BD-BR (%)</td>
+    <td class="tg-nrix">PSNR (dB)</td>
+    <td class="tg-nrix">BD-BR (%)</td>
   </tr>
 </thead>
 <tbody>
@@ -178,7 +170,7 @@ Finally, we calculate the BD-rates based on the results of HEVC (attached in the
     <td class="tg-7zrl">34.1018</td>
     <td class="tg-7zrl">11.4706</td>
     <td class="tg-7zrl">31.2232</td>
-    <td class="tg-7zrl">31.309</td>
+    <td class="tg-7zrl">31.3090</td>
   </tr>
   <tr>
     <td class="tg-7zrl">Johnny_1280x720_50.yuv_47</td>
@@ -237,6 +229,7 @@ unzip -o ./logs/result_sample.zip -d ./logs/
 ```
 
 ## Citations
+
 Please cite this work if you find it useful.
 ```
 @inproceedings{ho2020down,
@@ -266,8 +259,8 @@ This repository (as well as its materials) is for non-commercial uses and resear
 
 Thank G. Bjontegaard and S. Pateux for [ETRO's Bjontegaard Metric Implementation](https://github.com/tbr/bjontegaard_etro).
 ```
-[1] G. Bjontegaard, Calculation of average PSNR differences between RD-curves (VCEG-M33)
-[2] S. Pateux, J. Jung, An excel add-in for computing Bjontegaard metric and its evolution
+G. Bjontegaard, Calculation of average PSNR differences between RD-curves (VCEG-M33)
+S. Pateux, J. Jung, An excel add-in for computing Bjontegaard metric and its evolution
 ```
 This work is supported by JST, PRESTO Grant Number JPMJPR1757 Japan.
 
