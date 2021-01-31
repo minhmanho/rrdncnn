@@ -232,22 +232,15 @@ unzip -o ./logs/result_sample.zip -d ./logs/
 
 Please cite this work if you find it useful.
 ```
-@inproceedings{ho2020down,
-  title={Down-Sampling Based Video Coding with Degradation-Aware Restoration-Reconstruction Deep Neural Network},
-  author={Ho, Minh-Man and He, Gang and Wang, Zheng and Zhou, Jinjia},
-  booktitle={International Conference on Multimedia Modeling},
-  pages={99--110},
-  year={2020},
-  organization={Springer}
-}
-```
-```
-@article{ho2020rr,
+@article{ho2021rr,
+  title={RR-DnCNN v2.0: Enhanced Restoration-Reconstruction Deep Neural Network for Down-Sampling-Based Video Coding},
   author={Ho, Man M and Zhou, Jinjia and He, Gang},
-  journal={IEEE Transactions on Image Processing}, 
-  title={RR-DnCNN v2.0: Enhanced Restoration-Reconstruction Deep Neural Network for Down-Sampling Based Video Coding}, 
+  journal={IEEE Transactions on Image Processing},
+  volume={30},
+  pages={1702--1715},
   year={2021},
-  doi={10.1109/TIP.2020.3046872}}
+  publisher={IEEE}
+}
 ```
 
 ## License
