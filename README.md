@@ -11,11 +11,6 @@
 | 2020/01/07  | We won **Best Paper Runner-up Award** at MMM'2020 |
 | 2019/09/24  | Our work has been accepted to MMM'2020 (Oral) |
 
-## Tasks
-- [ ] Prepare HTML webpage version.
-- [ ] Summarize this work here.
-- [x] Publish evaluation code.
-
 ## Papers:
 [Down-Sampling Based Video Coding with Degradation-aware Restoration-Reconstruction Deep Neural Network](https://link.springer.com/chapter/10.1007/978-3-030-37731-1_9) <br>
 [Minh-Man Ho](https://minhmanho.github.io/), Gang He, Zheng Wang, and [Jinjia Zhou](https://www.zhou-lab.info/jinjia-zhou) <br>
@@ -258,4 +253,4 @@ S. Pateux, J. Jung, An excel add-in for computing Bjontegaard metric and its evo
 This work is supported by JST, PRESTO Grant Number JPMJPR1757 Japan.
 
 ## Contact
-If you have any suggestions, questions, or the use of materials infringe your copyrights/license, please contact me <manminhho.cs@gmail.com>.
+If you have any questions, or the use of material violates your copyright / license, please contact me <manminhho.cs@gmail.com>.
