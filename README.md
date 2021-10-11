@@ -226,6 +226,22 @@ unzip -o ./logs/result_sample.zip -d ./logs/
 ## Citations
 
 Please cite this work if you find it useful.
+
+Version 1.0:
+
+```
+@inproceedings{ho2020down,
+  title={Down-sampling based video coding with degradation-aware restoration-reconstruction deep neural network},
+  author={Ho, Minh-Man and He, Gang and Wang, Zheng and Zhou, Jinjia},
+  booktitle={International Conference on Multimedia Modeling},
+  pages={99--110},
+  year={2020},
+  organization={Springer}
+}
+```
+
+Version 2.0:
+
 ```
 @article{ho2021rr,
   title={RR-DnCNN v2.0: Enhanced Restoration-Reconstruction Deep Neural Network for Down-Sampling-Based Video Coding},
@@ -241,7 +257,6 @@ Please cite this work if you find it useful.
 ## License
 
 This repository (as well as its materials) is for non-commercial uses and research purposes only.
-
 
 ## Acknowledgement
 
